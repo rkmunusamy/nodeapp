@@ -6,7 +6,7 @@
     // Respond with "hello world" for requests that hit our root "/"
     app.get("/", function (req, res) {
  
-     return res.send("Ranjith sd World");
+     return res.send("RanjithWorld");
  
     });
 
