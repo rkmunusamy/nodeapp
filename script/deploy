@@ -1,8 +1,5 @@
-#!/bin/ssh
-ssh root@techsmew <<EOF
+#!/bin/sh 
  cd ~/nodeprod/nodeapp
  git pull origin master
  npm install
- pm2 restart all
- exit
-EOF
+ pm2 restart all 
