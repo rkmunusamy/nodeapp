@@ -1,12 +1,16 @@
-const express = require('express')
-const app = express()
-const port = 3000
+    // importing express framework
+    const express = require("express");
 
-app.get('/', (req, res) => {
-  res.send('Hello World!')
-})
+    const app = express();
 
-app.listen(port, () => {
-  console.log(`Example app listening at http://localhost:${port}`)
-})
+    // Respond with "hello world" for requests that hit our root "/"
+    app.get("/", function (req, res) {
+     return res.send("Hello World");
+    });
 
+    // listen to port 7000 by default
+    app.listen(process.env.PORT || 7000, () => {
+      console.log("Server is running");
+    });
+
+    module.exports = app;
