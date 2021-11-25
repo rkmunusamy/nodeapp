@@ -2,4 +2,3 @@
  cd /root/nodeprod/nodeapp
  git pull origin master
  npm install
- pm2 restart all
