@@ -1,5 +1,5 @@
 #!/bin/sh 
- cd ~/nodeprod/nodeapp
+ cd /root/nodeprod/nodeapp
  git pull origin master
  npm install
- pm2 restart all 
+ pm2 restart all
