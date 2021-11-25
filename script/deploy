@@ -1,5 +1,5 @@
 #!/bin/ssh <<EOF
- cd ~/node-app
+ cd ~/nodeprod/nodeapp
  git pull origin master
  npm install
  pm2 restart all
